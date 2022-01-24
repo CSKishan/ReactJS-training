@@ -17,10 +17,10 @@ function NewMeetupForm(props) {
     const enteredDesc = descInputRef.current.value;
 
     const meetupData = {
-      enteredTitle,
-      enteredImage,
-      enteredAddress,
-      enteredDesc,
+      title: enteredTitle,
+      image: enteredImage,
+      address: enteredAddress,
+      description: enteredDesc,
     };
 
     props.onAddMeetup(meetupData);
